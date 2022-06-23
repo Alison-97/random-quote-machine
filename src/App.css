@@ -1,38 +1,166 @@
 .App {
   text-align: center;
+  font-family: 'Sofia', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+
+#coffee{
+  border: purple solid;
+  width: 100px;
+  height: 100px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#background{
+  opacity: 0.05;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+#canvas{
+  width: 60%;
+  margin: auto;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#quote-box{
+  position: absolute;
+  font-size: 25px;
+  width: 30%;
+  right: 26%;
+  top: 17%;
+  height: 30%;
+  text-shadow: 1px 1px 1px gray;
+}
+
+#author{
+  font-size: 70%;
+  text-align: right;
+}
+
+#next-button{
+  position: absolute;
+  bottom: 39%;
+  right: 32%;
+  padding: 10px;
+  border: none;
   color: white;
+  border-radius: 10px;
+  font-family: inherit;
+  font-weight: bold;
+  opacity: 0.6;
+  box-shadow: 5px 5px #888888;
 }
 
-.App-link {
-  color: #61dafb;
+#next-button:hover{
+  opacity: 0.9;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+#typingHand{
+  position: absolute;
+  width: 5.3%;
+  left: 29%;
+  bottom: 37%;
+  transform-origin: 10% 90%;
+  animation-duration: 1.8s;
+  animation-name: typing;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+}
+
+#shakingLeg{
+  position: absolute;
+  width: 18%;
+  left: 40.2%;
+  bottom: -7.5%;
+  transform-origin: 0% 10%;
+  animation-duration: 3.8s;
+  animation-name: shake-leg;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+}
+
+@keyframes typing {
+  0% {
+      transform: rotate(0);
   }
-  to {
-    transform: rotate(360deg);
+  15% {
+      transform: rotate(-15deg);
+  }
+  30% {
+      transform: rotate(0);
+  }
+  45% {
+      transform: rotate(-15deg);
+  }
+  60% {
+      transform: rotate(0);
+  }
+}
+
+@keyframes shake-leg {
+  0% {
+      transform: rotate(0deg);
+  }
+  15% {
+      transform: rotate(-10deg);
+  }
+  30% {
+      transform: rotate(0deg);
+  }
+  65% {
+      transform: rotate(-10deg);
+  }
+  80% {
+    transform: rotate(0deg);
+}
+}
+
+@media only screen and (max-width: 1200px) {
+  #canvas{
+    width: 90%;
+  }
+  #quote-box{
+    font-size: 20px;
+    right: 10%;
+    width: 50%;
+  }
+  #next-button{
+    right:25%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  #canvas{
+    width: 100%;
+  }
+  #quote-box{
+    top:23%;
+    font-size: 20px;
+    width: 40%;
+    right: 10%;
+  }
+  #next-button{
+    right:20%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #quote-box{
+    top:23%;
+    font-size: 16px;
+    width: 50%;
+    right: 10%;
+    top: 33%;
+  }
+  #next-button{
+    right:50%;
+    bottom:10%;
   }
 }
