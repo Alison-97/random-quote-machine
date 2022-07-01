@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/random-quote-machine/static/css/main.9a4491af.css",
+    "main.js": "/random-quote-machine/static/js/main.af992c6f.js",
+    "static/js/787.c03f0df6.chunk.js": "/random-quote-machine/static/js/787.c03f0df6.chunk.js",
+    "static/media/ManChilling.svg": "/random-quote-machine/static/media/ManChilling.a58db7c0fc7471faeb24b9625b1d0bca.svg",
+    "static/media/leg.svg": "/random-quote-machine/static/media/leg.e445877a3a4b8a5f5bcf9f92d852d4ab.svg",
+    "index.html": "/random-quote-machine/index.html",
+    "main.9a4491af.css.map": "/random-quote-machine/static/css/main.9a4491af.css.map",
+    "main.af992c6f.js.map": "/random-quote-machine/static/js/main.af992c6f.js.map",
+    "787.c03f0df6.chunk.js.map": "/random-quote-machine/static/js/787.c03f0df6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9a4491af.css",
+    "static/js/main.af992c6f.js"
+  ]
+}
