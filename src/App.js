@@ -12,8 +12,8 @@ let colorIndex = 1;
 
 class App extends React.Component {
   state = {
-    quote: "I'm here to cool myself down",
-    author: "Yourself",
+    quote: "It is wise to direct your anger towards problems - not people; to focus your energies on answers - not excuses.",
+    author: 'William Arthur Ward',
     color: '#864F89'
   }
 
