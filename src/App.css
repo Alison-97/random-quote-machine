@@ -4,13 +4,6 @@
 }
 
 
-
-#coffee{
-  border: purple solid;
-  width: 100px;
-  height: 100px;
-}
-
 #background{
   opacity: 0.05;
   position: absolute;
@@ -84,6 +77,14 @@
   animation-name: shake-leg;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in;
+}
+
+#musicNote1 {
+  position: absolute;
+  width: 20%;
+  left: 0%;
+  top: 0%;
+  height: auto;
 }
 
 @keyframes typing {
