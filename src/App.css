@@ -3,6 +3,9 @@
   font-family: 'Sofia', sans-serif;
 }
 
+#manChilling{
+  display: block;
+}
 
 #background{
   opacity: 0.05;
